@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+
+    <title>Project Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Mobile Menu Toggle Button -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <div class="container">
+      <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <h1>My Projects</h1>
+          <p>Explore my development portfolio</p>
+        </div>
+        <div class="project-list">
+          <a
+            href="#"
+            class="project-item"
+            data-url="https://landing-page-2-five-delta.vercel.app/"
+            data-title="Landing Page"
+          >
+            <div class="project-title">Landing Page</div>
+            <div class="project-description">
+              Beautiful UI/UX interface design
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="project-item"
+            data-url="https://grocery-web-three.vercel.app/"
+            data-title="Landing Page"
+          >
+            <div class="project-title">grocery-web</div>
+            <div class="project-description">
+              Beautiful UI/UX interface design
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="project-item"
+            data-url="https://mega-blog-six-olive.vercel.app/"
+            data-title="Spiritual Blog"
+          >
+            <div class="project-title">Spiritual Blog</div>
+            <div class="project-description">
+              A modern blogging web app with secure authentication and dynamic
+              post creation using React and Appwrite.
+            </div>
+          </a>
+        </div>
+      </nav>
+
+      <main class="main-content">
+        <div class="welcome-screen" id="welcome">
+          <div class="welcome-icon">🚀</div>
+          <h1 class="welcome-title">Welcome to My Projects</h1>
+          <p class="welcome-subtitle">
+            Discover a collection of innovative web applications and interactive
+            experiences. Select a project from the sidebar to explore live demos
+            and detailed implementations.
+          </p>
+
+          <div class="stats"></div>
+        </div>
+
+        <div id="project-content" style="display: none">
+          <div class="frame-header">
+            <h2 class="frame-title" id="project-title">Project Title</h2>
+            <a
+              href="#"
+              class="external-link"
+              id="external-link"
+              target="_blank"
+            >
+              <span>Open in New Tab</span>
+              <span>↗</span>
+            </a>
+          </div>
+          <iframe class="project-frame" id="project-frame" src=""></iframe>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
